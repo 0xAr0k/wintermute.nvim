@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/Users/0xarok/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["calvera-dark.nvim"] = {
+    loaded = true,
+    path = "/Users/0xarok/.local/share/nvim/site/pack/packer/start/calvera-dark.nvim",
+    url = "https://github.com/hoprr/calvera-dark.nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/Users/0xarok/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -148,6 +153,21 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/0xarok/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  ["melange-nvim"] = {
+    loaded = true,
+    path = "/Users/0xarok/.local/share/nvim/site/pack/packer/start/melange-nvim",
+    url = "https://github.com/savq/melange-nvim"
+  },
+  ["neo-tree.nvim"] = {
+    loaded = true,
+    path = "/Users/0xarok/.local/share/nvim/site/pack/packer/start/neo-tree.nvim",
+    url = "https://github.com/nvim-neo-tree/neo-tree.nvim"
+  },
+  ["nui.nvim"] = {
+    loaded = true,
+    path = "/Users/0xarok/.local/share/nvim/site/pack/packer/start/nui.nvim",
+    url = "https://github.com/MunifTanjim/nui.nvim"
   },
   ["null-ls.nvim"] = {
     loaded = true,
@@ -210,11 +230,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/0xarok/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
-  },
-  ["tokyonight.nvim"] = {
-    loaded = true,
-    path = "/Users/0xarok/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
-    url = "https://github.com/folke/tokyonight.nvim"
   },
   ["transparent.nvim"] = {
     loaded = true,

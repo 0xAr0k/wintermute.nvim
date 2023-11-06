@@ -1,9 +1,12 @@
+vim.g.calvera_contrast = false
+vim.g.calvera_transparent_background = true
+
 require("arok.plugins-setup")
 require("arok.core.options")
 require("arok.core.colorscheme")
 require("arok.core.keymaps")
 require("arok.plugins.comment")
-require("arok.plugins.nvim-tree")
+require("arok.plugins.neo-tree")
 require("arok.plugins.lualine")
 require("arok.plugins.telescope")
 require("arok.plugins.nvim-cmp")
