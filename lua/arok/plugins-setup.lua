@@ -40,6 +40,8 @@ return packer.startup(function(use)
 
 	use("hoprr/calvera-dark.nvim") -- calvera colorscheme
 
+	use("folke/tokyonight.nvim") -- tokyonight colorscheme
+
 	use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
 
 	use("szw/vim-maximizer") -- maximizes and restores current window
