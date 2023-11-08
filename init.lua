@@ -1,6 +1,3 @@
-vim.g.calvera_contrast = false
-vim.g.calvera_transparent_background = true
-
 require("arok.plugins-setup")
 require("arok.core.options")
 require("arok.core.colorscheme")
