@@ -124,6 +124,11 @@ _G.packer_plugins = {
     path = "/Users/0xarok/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
+  ["kanagawa.nvim"] = {
+    loaded = true,
+    path = "/Users/0xarok/.local/share/nvim/site/pack/packer/start/kanagawa.nvim",
+    url = "https://github.com/rebelot/kanagawa.nvim"
+  },
   ["lspkind.nvim"] = {
     loaded = true,
     path = "/Users/0xarok/.local/share/nvim/site/pack/packer/start/lspkind.nvim",
@@ -189,6 +194,11 @@ _G.packer_plugins = {
     path = "/Users/0xarok/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-transparent"] = {
+    loaded = true,
+    path = "/Users/0xarok/.local/share/nvim/site/pack/packer/start/nvim-transparent",
+    url = "https://github.com/xiyaowong/nvim-transparent"
+  },
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "/Users/0xarok/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
@@ -230,11 +240,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/0xarok/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
-  },
-  ["transparent.nvim"] = {
-    loaded = true,
-    path = "/Users/0xarok/.local/share/nvim/site/pack/packer/start/transparent.nvim",
-    url = "https://github.com/xiyaowong/transparent.nvim"
   },
   ["typescript.nvim"] = {
     loaded = true,

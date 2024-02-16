@@ -36,11 +36,11 @@ return packer.startup(function(use)
 
 	use("savq/melange-nvim") -- melange colorscheme
 
-	use("xiyaowong/transparent.nvim") -- transparent bg
-
 	use("hoprr/calvera-dark.nvim") -- calvera colorscheme
 
-	use("folke/tokyonight.nvim") -- tokyonight colorscheme
+	use("rebelot/kanagawa.nvim") -- kanagawa colorscheme
+
+	use("xiyaowong/nvim-transparent") -- transparent background
 
 	use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
 

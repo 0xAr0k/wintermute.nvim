@@ -16,6 +16,8 @@ if not mason_null_ls_status then
 	return
 end
 
+local registry = require("mason-registry")
+
 -- enable mason
 mason.setup()
 
@@ -37,6 +39,26 @@ mason_lspconfig.setup({
 	automatic_installation = true, -- not the same as ensure_installed
 })
 
+require("lspconfig").efm.setup({
+	filetypes = { "solidity" },
+	settings = {
+		languages = {
+			solidity = {
+				{ -- solidity could have more than one linter, hence this nesting.
+					lintStdin = true, -- pipe buffer content to solhint
+					lintIgnoreExitCode = true, -- because exit code 1 is common
+					lintCommand = "solhint stdin", -- default format stylish
+					lintFormats = {
+						" %#%l:%c %#%tarning %#%m",
+						" %#%l:%c %#%trror %#%m", -- solhint only has error and warn
+					},
+					lintSource = "solhint",
+				},
+			},
+		},
+	},
+})
+
 mason_null_ls.setup({
 	-- list of formatters & linters for mason to install
 	ensure_installed = {
@@ -48,3 +70,12 @@ mason_null_ls.setup({
 	-- auto-install configured formatters & linters (with null-ls)
 	automatic_installation = true,
 })
+
+for _, pkg_name in ipairs({ "solhint" }) do -- add others here
+	local ok, pkg = pcall(registry.get_package, pkg_name)
+	if ok then
+		if not pkg:is_installed() then
+			pkg:install()
+		end
+	end
+end
