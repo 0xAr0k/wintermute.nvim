@@ -3,4 +3,4 @@ if not setup then
 	return
 end
 
-devcontainer.setup()
+devcontainer.setup({})
