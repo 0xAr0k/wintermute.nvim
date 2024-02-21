@@ -38,3 +38,9 @@ keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>")
 
 -- terminal
 keymap.set("n", "<leader>t", ":FTermToggle<CR>")
+
+-- lazydocker
+keymap.set("n", "<leader>k", ":LazyDocker<CR>")
+
+-- devcontainer
+keymap.set("n", "<leader>dc", ":DevcontainerStart<CR>")
